@@ -27,10 +27,7 @@ function callName(req, res) {
        process.stderr.on('data', (data) => {
            res.send(`error:${data}`);
         });
-       process.on('close', () => {
-          res.send("Closed");
-        });
-
+      
 
 } 
 
